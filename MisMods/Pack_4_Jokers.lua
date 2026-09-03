@@ -90,7 +90,7 @@ SMODS.Joker({
         name = "Juan",
         text = {
             "Si tienes a {C:red}Tux Malvado{}",
-            "otorga {C:mult}+#1#{} Mult",
+            "otorga {C:mult}x#1#{} Mult",
             "por carta en tu baraja."
         }
     },
@@ -134,7 +134,7 @@ SMODS.Joker({
     loc_txt = {
         name = "Win_Joker",
         text = {
-            "Otorga {C:mult}+#1#{} Mult",
+            "Otorga {C:mult}x#1#{} Mult",
             "por cada Joker del",
             "pack equipado."
         }
