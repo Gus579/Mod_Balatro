@@ -65,6 +65,9 @@
 - Creación de README.md con instrucciones de instalación
 - Creación de este CHANGELOG
 - Subida del proyecto a github
+
+---
+
 ## v1.1 — Correcciones finales
 - Corrección: keys de detección de Jokers del pack sin prefijo `misj_`, causaba que Juan y Win_Joker no detectaran a los otros Jokers correctamente
 - Corrección: Atlas del Joker 3 estaba duplicado en el código, eliminado el duplicado
