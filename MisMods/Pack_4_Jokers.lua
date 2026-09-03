@@ -84,6 +84,14 @@ SMODS.Atlas({
 })
 
 
+--Joker 3
+SMODS.Atlas({
+    key = "joker_3_atlas",
+    path = "juan.png",
+    px = 71,
+    py = 95
+})
+
 SMODS.Joker({
     key = "joker_3",
     loc_txt = {
@@ -94,7 +102,6 @@ SMODS.Joker({
             "por carta en tu baraja."
         }
     },
-    --Configuracion de texto
     loc_vars = function(self, info_queue, card)
         return { vars = { 3 } }
     end,
@@ -104,18 +111,17 @@ SMODS.Joker({
     atlas = "joker_3_atlas",
     pos = { x = 0, y = 0 },
     calculate = function(self, card, context)
-        --Condicion definida que si tenes al joker 1 (tux malvado) equipado se acciona
         if context.joker_main then
             local tiene_tux = false
             for _, j in ipairs(G.jokers.cards) do
-                if j.config.center.key == "joker_1" then
+                if j.config.center.key == "misj_joker_1" then
                     tiene_tux = true
                     break
                 end
             end
             if tiene_tux then
                 local cartas = #G.playing_cards
-                return { mult = cartas * 3 }
+                return { xmult = cartas * 0.1 }
             end
         end
     end
