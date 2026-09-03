@@ -64,5 +64,11 @@
 - Revisión general del código y comentarios internos
 - Creación de README.md con instrucciones de instalación
 - Creación de este CHANGELOG
-- Cambio de signos en el joker 3 y 4 para evitar confusiones (ambos mostraban +mult en vez de xmult)
-- Solucion de errores en el joker 3 y balanceo en sus valores para que no este tan roto
+
+## v1.1 — Correcciones finales
+- Corrección: keys de detección de Jokers del pack sin prefijo `misj_`, causaba que Juan y Win_Joker no detectaran a los otros Jokers correctamente
+- Corrección: Atlas del Joker 3 estaba duplicado en el código, eliminado el duplicado
+- Juan: mecánica cambiada de +mult a xmult, valor ajustado a x0.1 por carta para evitar valores absurdos
+- Juan: texto actualizado para reflejar el cambio a xmult
+- Win_Joker: calculate cambiado a xmult para que el efecto sea multiplicador
+- Subida del proyecto a GitHub

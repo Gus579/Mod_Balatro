@@ -83,15 +83,6 @@ SMODS.Atlas({
     py = 95
 })
 
-
---Joker 3
-SMODS.Atlas({
-    key = "joker_3_atlas",
-    path = "juan.png",
-    px = 71,
-    py = 95
-})
-
 SMODS.Joker({
     key = "joker_3",
     loc_txt = {
@@ -140,17 +131,17 @@ SMODS.Joker({
     loc_txt = {
         name = "Win_Joker",
         text = {
-            "Otorga {C:mult}x#1#{} Mult",
-            "por cada Joker del",
-            "pack equipado."
-        }
+    "Otorga {C:mult}+#1#{} Mult",
+    "por cada Joker del",
+    "pack equipado."
+    }
     },
     loc_vars = function(self, info_queue, card)
         local count = 0
         if G.jokers then
             for _, j in ipairs(G.jokers.cards) do
                 local k = j.config.center.key
-                if k == "joker_1" or k == "joker_2" or k == "joker_3" then
+                if k == "misj_joker_1" or k == "misj_joker_2" or k == "misj_joker_3" then
                     count = count + 1
                 end
             end
@@ -167,11 +158,11 @@ SMODS.Joker({
             local count = 0
             for _, j in ipairs(G.jokers.cards) do
                 local k = j.config.center.key
-                if k == "joker_1" or k == "joker_2" or k == "joker_3" then
+                if k == "misj_joker_1" or k == "misj_joker_2" or k == "misj_joker_3" then
                     count = count + 1
                 end
             end
-            return { mult = count * 10 }
+            return { xmult = count * 10 }
         end
     end
 })
