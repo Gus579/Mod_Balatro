@@ -64,3 +64,4 @@
 - Revisión general del código y comentarios internos
 - Creación de README.md con instrucciones de instalación
 - Creación de este CHANGELOG
+- Cambio de signos en el joker 3 y 4 para evitar confusiones (ambos mostraban +mult en vez de xmult)
