@@ -125,7 +125,6 @@ SMODS.Atlas({
     py = 95,
 })
 
-
 SMODS.Joker({
     key = "joker_4",
     loc_txt = {
@@ -137,16 +136,7 @@ SMODS.Joker({
         }
     },
     loc_vars = function(self, info_queue, card)
-        local count = 0
-        if G.jokers then
-            for _, j in ipairs(G.jokers.cards) do
-                local k = j.config.center.key
-                if k == "misj_joker_1" or k == "misj_joker_2" or k == "misj_joker_3" then
-                    count = count + 1
-                end
-            end
-        end
-        return { vars = { count * 10 } }
+        return { vars = { 10, 30 } }
     end,
     config = {},
     rarity = 2,
