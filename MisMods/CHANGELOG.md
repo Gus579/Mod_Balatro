@@ -74,3 +74,4 @@
 - Juan: mecánica cambiada de +mult a xmult, valor ajustado a x0.1 por carta para evitar valores absurdos
 - Juan: texto actualizado para reflejar el cambio a xmult
 - Win_Joker: calculate cambiado a xmult para que el efecto sea multiplicador
+- Win_Joker: texto actualizado para mostrar el valor por Joker y el máximo posible de forma explícita

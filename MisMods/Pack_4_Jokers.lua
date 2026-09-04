@@ -131,10 +131,10 @@ SMODS.Joker({
     loc_txt = {
         name = "Win_Joker",
         text = {
-    "Otorga {C:mult}+#1#{} Mult",
-    "por cada Joker del",
-    "pack equipado."
-    }
+            "{C:mult}x#1#{} Mult por Joker",
+            "del pack equipado.",
+            "(max. {C:mult}x#2#{})"
+        }
     },
     loc_vars = function(self, info_queue, card)
         local count = 0
